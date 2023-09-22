@@ -1,5 +1,5 @@
 {
-  "name": "colord",
+  "name": "@pixi/colord",
   "version": "2.9.3",
   "description": "👑 A tiny yet powerful tool for high-performance color manipulations and conversions",
   "keywords": [
@@ -31,70 +31,114 @@
   "module": "./index.mjs",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "import": "./index.mjs",
-      "require": "./index.js",
-      "default": "./index.mjs"
+      "import": {
+        "default": "./index.mjs",
+        "types": "./index.d.ts"
+      },
+      "require": {
+        "default": "./index.js",
+        "types": "./index.d.ts"
+      }
     },
     "./plugins/a11y": {
-      "types": "./plugins/a11y.d.ts",
-      "import": "./plugins/a11y.mjs",
-      "require": "./plugins/a11y.js",
-      "default": "./plugins/a11y.mjs"
+      "import": {
+        "default": "./plugins/a11y.mjs",
+        "types": "./plugins/a11y.d.ts"
+      },
+      "require": {
+        "default": "./plugins/a11y.js",
+        "types": "./plugins/a11y.d.ts"
+      }
     },
     "./plugins/cmyk": {
-      "types": "./plugins/cmyk.d.ts",
-      "import": "./plugins/cmyk.mjs",
-      "require": "./plugins/cmyk.js",
-      "default": "./plugins/cmyk.mjs"
+      "import": {
+        "default": "./plugins/cmyk.mjs",
+        "types": "./plugins/cmyk.d.ts"
+      },
+      "require": {
+        "default": "./plugins/cmyk.js",
+        "types": "./plugins/cmyk.d.ts"
+      }
     },
     "./plugins/harmonies": {
-      "types": "./plugins/harmonies.d.ts",
-      "import": "./plugins/harmonies.mjs",
-      "require": "./plugins/harmonies.js",
-      "default": "./plugins/harmonies.mjs"
+      "import": {
+        "default": "./plugins/harmonies.mjs",
+        "types": "./plugins/harmonies.d.ts"
+      },
+      "require": {
+        "default": "./plugins/harmonies.js",
+        "types": "./plugins/harmonies.d.ts"
+      }
     },
     "./plugins/hwb": {
-      "types": "./plugins/hwb.d.ts",
-      "import": "./plugins/hwb.mjs",
-      "require": "./plugins/hwb.js",
-      "default": "./plugins/hwb.mjs"
+      "import": {
+        "default": "./plugins/hwb.mjs",
+        "types": "./plugins/hwb.d.ts"
+      },
+      "require": {
+        "default": "./plugins/hwb.js",
+        "types": "./plugins/hwb.d.ts"
+      }
     },
     "./plugins/lab": {
-      "types": "./plugins/lab.d.ts",
-      "import": "./plugins/lab.mjs",
-      "require": "./plugins/lab.js",
-      "default": "./plugins/lab.mjs"
+      "import": {
+        "default": "./plugins/lab.mjs",
+        "types": "./plugins/lab.d.ts"
+      },
+      "require": {
+        "default": "./plugins/lab.js",
+        "types": "./plugins/lab.d.ts"
+      }
     },
     "./plugins/lch": {
-      "types": "./plugins/lch.d.ts",
-      "import": "./plugins/lch.mjs",
-      "require": "./plugins/lch.js",
-      "default": "./plugins/lch.mjs"
+      "import": {
+        "default": "./plugins/lch.mjs",
+        "types": "./plugins/lch.d.ts"
+      },
+      "require": {
+        "default": "./plugins/lch.js",
+        "types": "./plugins/lch.d.ts"
+      }
     },
     "./plugins/minify": {
-      "types": "./plugins/minify.d.ts",
-      "import": "./plugins/minify.mjs",
-      "require": "./plugins/minify.js",
-      "default": "./plugins/minify.mjs"
+      "import": {
+        "default": "./plugins/minify.mjs",
+        "types": "./plugins/minify.d.ts"
+      },
+      "require": {
+        "default": "./plugins/minify.js",
+        "types": "./plugins/minify.d.ts"
+      }
     },
     "./plugins/mix": {
-      "types": "./plugins/mix.d.ts",
-      "import": "./plugins/mix.mjs",
-      "require": "./plugins/mix.js",
-      "default": "./plugins/mix.mjs"
+      "import": {
+        "default": "./plugins/mix.mjs",
+        "types": "./plugins/mix.d.ts"
+      },
+      "require": {
+        "default": "./plugins/mix.js",
+        "types": "./plugins/mix.d.ts"
+      }
     },
     "./plugins/names": {
-      "types": "./plugins/names.d.ts",
-      "import": "./plugins/names.mjs",
-      "require": "./plugins/names.js",
-      "default": "./plugins/names.mjs"
+      "import": {
+        "default": "./plugins/names.mjs",
+        "types": "./plugins/names.d.ts"
+      },
+      "require": {
+        "default": "./plugins/names.js",
+        "types": "./plugins/names.d.ts"
+      }
     },
     "./plugins/xyz": {
-      "types": "./plugins/xyz.d.ts",
-      "import": "./plugins/xyz.mjs",
-      "require": "./plugins/xyz.js",
-      "default": "./plugins/xyz.mjs"
+      "import": {
+        "default": "./plugins/xyz.mjs",
+        "types": "./plugins/xyz.d.ts"
+      },
+      "require": {
+        "default": "./plugins/xyz.js",
+        "types": "./plugins/xyz.d.ts"
+      }
     },
     "./package.json": "./package.json"
   },
@@ -136,7 +180,7 @@
     "tinycolor2": "^1.4.2",
     "ts-jest": "^26.5.4",
     "ts-node": "^9.1.1",
-    "tslib": "^2.1.0",
+    "tslib": "^2.6.2",
     "typescript": "^4.2.3"
   },
   "jest": {
