@@ -1,6 +1,6 @@
 {
   "name": "@pixi/colord",
-  "version": "2.9.5",
+  "version": "2.9.6",
   "description": "👑 A tiny yet powerful tool for high-performance color manipulations and conversions",
   "keywords": [
     "color",
