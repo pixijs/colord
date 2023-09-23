@@ -32,12 +32,12 @@
   "exports": {
     ".": {
       "import": {
-        "default": "./index.mjs",
-        "types": "./index.d.ts"
+        "types": "./index.d.ts",
+        "default": "./index.mjs"
       },
       "require": {
-        "default": "./index.js",
-        "types": "./index.d.ts"
+        "types": "./index.d.ts",
+        "default": "./index.js"
       }
     },
     "./plugins/a11y": {
