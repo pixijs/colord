@@ -42,102 +42,102 @@
     },
     "./plugins/a11y": {
       "import": {
-        "default": "./plugins/a11y.mjs",
-        "types": "./plugins/a11y.d.ts"
+        "types": "./plugins/a11y.d.ts",
+        "default": "./plugins/a11y.mjs"
       },
       "require": {
-        "default": "./plugins/a11y.js",
-        "types": "./plugins/a11y.d.ts"
+        "types": "./plugins/a11y.d.ts",
+        "default": "./plugins/a11y.js"
       }
     },
     "./plugins/cmyk": {
       "import": {
-        "default": "./plugins/cmyk.mjs",
-        "types": "./plugins/cmyk.d.ts"
+        "types": "./plugins/cmyk.d.ts",
+        "default": "./plugins/cmyk.mjs"
       },
       "require": {
-        "default": "./plugins/cmyk.js",
-        "types": "./plugins/cmyk.d.ts"
+        "types": "./plugins/cmyk.d.ts",
+        "default": "./plugins/cmyk.js"
       }
     },
     "./plugins/harmonies": {
       "import": {
-        "default": "./plugins/harmonies.mjs",
-        "types": "./plugins/harmonies.d.ts"
+        "types": "./plugins/harmonies.d.ts",
+        "default": "./plugins/harmonies.mjs"
       },
       "require": {
-        "default": "./plugins/harmonies.js",
-        "types": "./plugins/harmonies.d.ts"
+        "types": "./plugins/harmonies.d.ts",
+        "default": "./plugins/harmonies.js"
       }
     },
     "./plugins/hwb": {
       "import": {
-        "default": "./plugins/hwb.mjs",
-        "types": "./plugins/hwb.d.ts"
+        "types": "./plugins/hwb.d.ts",
+        "default": "./plugins/hwb.mjs"
       },
       "require": {
-        "default": "./plugins/hwb.js",
-        "types": "./plugins/hwb.d.ts"
+        "types": "./plugins/hwb.d.ts",
+        "default": "./plugins/hwb.js"
       }
     },
     "./plugins/lab": {
       "import": {
-        "default": "./plugins/lab.mjs",
-        "types": "./plugins/lab.d.ts"
+        "types": "./plugins/lab.d.ts",
+        "default": "./plugins/lab.mjs"
       },
       "require": {
-        "default": "./plugins/lab.js",
-        "types": "./plugins/lab.d.ts"
+        "types": "./plugins/lab.d.ts",
+        "default": "./plugins/lab.js"
       }
     },
     "./plugins/lch": {
       "import": {
-        "default": "./plugins/lch.mjs",
-        "types": "./plugins/lch.d.ts"
+        "types": "./plugins/lch.d.ts",
+        "default": "./plugins/lch.mjs"
       },
       "require": {
-        "default": "./plugins/lch.js",
-        "types": "./plugins/lch.d.ts"
+        "types": "./plugins/lch.d.ts",
+        "default": "./plugins/lch.js"
       }
     },
     "./plugins/minify": {
       "import": {
-        "default": "./plugins/minify.mjs",
-        "types": "./plugins/minify.d.ts"
+        "types": "./plugins/minify.d.ts",
+        "default": "./plugins/minify.mjs"
       },
       "require": {
-        "default": "./plugins/minify.js",
-        "types": "./plugins/minify.d.ts"
+        "types": "./plugins/minify.d.ts",
+        "default": "./plugins/minify.js"
       }
     },
     "./plugins/mix": {
       "import": {
-        "default": "./plugins/mix.mjs",
-        "types": "./plugins/mix.d.ts"
+        "types": "./plugins/mix.d.ts",
+        "default": "./plugins/mix.mjs"
       },
       "require": {
-        "default": "./plugins/mix.js",
-        "types": "./plugins/mix.d.ts"
+        "types": "./plugins/mix.d.ts",
+        "default": "./plugins/mix.js"
       }
     },
     "./plugins/names": {
       "import": {
-        "default": "./plugins/names.mjs",
-        "types": "./plugins/names.d.ts"
+        "types": "./plugins/names.d.ts",
+        "default": "./plugins/names.mjs"
       },
       "require": {
-        "default": "./plugins/names.js",
-        "types": "./plugins/names.d.ts"
+        "types": "./plugins/names.d.ts",
+        "default": "./plugins/names.js"
       }
     },
     "./plugins/xyz": {
       "import": {
-        "default": "./plugins/xyz.mjs",
-        "types": "./plugins/xyz.d.ts"
+        "types": "./plugins/xyz.d.ts",
+        "default": "./plugins/xyz.mjs"
       },
       "require": {
-        "default": "./plugins/xyz.js",
-        "types": "./plugins/xyz.d.ts"
+        "types": "./plugins/xyz.d.ts",
+        "default": "./plugins/xyz.js"
       }
     },
     "./package.json": "./package.json"
@@ -153,7 +153,7 @@
     "check-types": "tsc --noEmit true",
     "test": "jest tests --coverage",
     "benchmark": "tsc --outDir bench --skipLibCheck --esModuleInterop ./tests/benchmark.ts && node ./bench/tests/benchmark.js && rm -rf ./bench",
-    "build": "rm -rf ./dist/* && rollup --config",
+    "build": "rollup --config",
     "release": "npm run build && cp *.json dist && cp *.md dist && npm publish dist",
     "check-release": "npm run release -- --dry-run"
   },
